@@ -12,11 +12,11 @@ insert into games (year,season,date,which_num,player_id,rank_num,point) values("
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-02",1,17,3,-134);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-02",2,11,2,41);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-02",2,15,1,754);
-insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-02",2,26,3 -216);
-insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-02",2,5,4 -579);
+insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-02",2,26,3,-216);
+insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-02",2,5,4,-579);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-04",1,23,2,152);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-04",1,28,4,-509);
-insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-04",1,9,3 -290);
+insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-04",1,9,3, -290);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-04",1,16,1,647);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-04",2,22,3,-174);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-04",2,17,1,809);

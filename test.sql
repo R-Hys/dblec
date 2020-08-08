@@ -1,4 +1,5 @@
 use dblec;
+insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-01",1,22,2,184);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-01",1,1,4,-580);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-01",1,5,1,629);
 insert into games (year,season,date,which_num,player_id,rank_num,point) values("2018","regular","10-01",1,19,3,-233);

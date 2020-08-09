@@ -46,6 +46,12 @@
     font-family: inherit;
     font-size: 100%;
   }
+
+  /* header ==============================*/
+  header {
+    font-size: large;
+    border-bottom: 2px solid black;
+  }
   
   /* top ================================ */
   .top-wrapper {

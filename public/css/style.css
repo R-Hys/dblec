@@ -22,7 +22,7 @@
     margin: 0;
   }
   
-  a {
+  /* a {
     display: block;
     text-decoration: none;
     color: #2d3133;
@@ -31,7 +31,7 @@
   
   a:hover {
     transition: all 0.3s ease;
-  }
+  } */
   
   
   h1, h2, h3, h4, h5, h6, p {
@@ -46,12 +46,6 @@
     font-family: inherit;
     font-size: 100%;
   }
-
-  /* header ==============================*/
-  header {
-    font-size: large;
-    border-bottom: 2px solid black;
-  }
   
   /* top ================================ */
   .top-wrapper {
@@ -62,66 +56,13 @@
     align-items: center;
     margin: 0 auto;
     padding: 60px;
-  }
-/*   
-  .top-detail {
-    width: 36%;
-    min-width: 320px;
-    margin-top: -40px;
-  }
-  
-  .top-detail .subtitle {
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-  
-  .top-detail .title {
-    font-size: 54px;
-    line-height: 66px;
-    letter-spacing: 2px;
-    margin-bottom: 24px;
-  }
-  
-  .top-detail .description {
-    font-size: 14px;
-    line-height: 28px;
-    letter-spacing: 0.5px;
-    margin-bottom: 40px;
-  }
-  
-  .top-detail .index-button {
-    width: 184px;
-    height: 48px;
-    text-align: center;
-    line-height: 45px;
-    font-weight: 600;
-    color: #42cea9;;
-    background-color: #ffffff;
-    border: 2px solid #58d2b2;
-    border-radius: 2px;
-  }
-  
-  .top-detail .index-button:hover {
-    color: #ffffff;
-    background-color:  #58d2b2;
-  } */
-  
+  }  
   
   .index-button {
     cursor: pointer;
   }
   
-  /* .top-image {
-    width: 64%;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .top-image img {
-    width: 88%;
-  } */
-  
+    
   /* header ================================ */
   header {
     height: 56px;

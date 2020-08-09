@@ -69,6 +69,10 @@
     background-color: #ffffff;
     border-bottom: 1px solid #f0f4f9;
   }
+
+  header a {
+    font-weight: 600;
+  }
   
   /* .header-logo {
     margin-left: 56px;

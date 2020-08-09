@@ -30,4 +30,24 @@ app.get('/', (req, res) => {
   res.render('top.ejs');
 });
 
+app.get('/team_list', (req, res) => {
+  connection.query(
+    'SELECT * FROM teams',
+    (error, results) => {
+      console.log(results);
+      res.render('team_list.ejs');
+    }
+  );
+});
+
+app.get('/player_list', (req, res) => {
+  connection.query(
+    'SELECT * FROM players',
+    (error, results) => {
+      console.log(results);
+      res.render('player_list.ejs');
+    }
+  );
+});
+
 app.listen(3000);

@@ -22,12 +22,12 @@
     margin: 0;
   }
   
-  a {
+  /* a {
     display: block;
     text-decoration: none;
     color: #2d3133;
     font-size: 14px;
-  }
+  } */
   
   a:hover {
     transition: all 0.3s ease;
@@ -72,6 +72,8 @@
 
   header a {
     font-weight: 600;
+    color: #6c7686;
+    margin: 0;
   }
   
   /* .header-logo {

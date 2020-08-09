@@ -71,6 +71,8 @@
   }
 
   header a {
+    text-decoration: none;
+    font-size: 64px;
     font-weight: 600;
     color: #6c7686;
     margin: 0;

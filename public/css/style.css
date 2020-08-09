@@ -129,18 +129,18 @@
     border-bottom: 1px solid #f0f4f9;
   }
   
-  .header-logo {
+  /* .header-logo {
     margin-left: 56px;
     font-weight: 600;
     font-size: 20px;
     line-height: 56px;
     color: #6c7686;
     display: inline;
-  }
+  } */
   
-  .header-logo:hover {
+  /* .header-logo:hover {
     color: #58d2b2;
-  }
+  } */
   
   /* container ================================ */
   .container {

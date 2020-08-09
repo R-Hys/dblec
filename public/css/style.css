@@ -48,12 +48,13 @@
   }
   
   /* top ================================ */
-  .top-wrapper {
-    max-width: 1200px;
-    min-width: 920px;
-    display: flex;
+  .wrapper {
+    /* max-width: 1200px;
+    min-width: 920px; */
+    /* display: flex; */
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 auto;
     padding: 60px;
   }  
@@ -72,7 +73,7 @@
 
   header a {
     text-decoration: none;
-    font-size: 44px;
+    font-size: 34px;
     font-weight: 600;
     color: #6c7686;
     margin: 0;

@@ -9,21 +9,28 @@
   <body>
     <header>
         <div class="container">
-            <a href="/" class="header-logo"><h1>M LEAGUE DB</h1></a>
+            <a href="/"><h1>M LEAGUE DB</h1></a>
         </div>
       </header>
     <div class="container">
       <div class="container-header">
-        <h1>買い物リスト作成</h1>
+        <h1>チーム一覧</h1>
       </div>
-      <div class="item-form-wrapper">
-        <p class="form-label">買うもの</p>
-        <form action="/create" method="post">
-          <input type="text" name="itemName">
-          <input type="submit" value="作成する">
-        </form>
+      <div class="index-table-wrapper">
+        <!-- <div class="table-head">
+          <span>チーム名</span>
+        </div> -->
+        <ul class="table-body">
+          <% teams.forEach((team) => { %>
+            <li>
+              <div class="team-data">
+                <span class="name-column"><%= team.name %></span>
+              </div>
+            </li>
+          <% }) %>
+        </ul>
       </div>
-      <a href="/index" class="cancel-button"></span>もどる</a>
+      <a href="/" class="cancel-button"></span>もどる</a>
     </div>
   </body>
 </html>

@@ -34,8 +34,8 @@ app.get('/team_list', (req, res) => {
   connection.query(
     'SELECT * FROM teams',
     (error, results) => {
-      console.log(results);
-      res.render('team_list.ejs');
+      // console.log(results);
+      res.render('team_list.ejs', {teams: results});
     }
   );
 });

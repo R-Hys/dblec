@@ -74,6 +74,11 @@
     padding-top: 30px;
     padding-bottom: 10px;
   }
+
+  .player-form-wrapper input {
+    width: 100px;
+  }
+
   /* team_list ============================= */
 
   .container-header {
@@ -88,35 +93,41 @@
     cursor: pointer;
     padding: 20px 0;
   }
-    
-  /* header ================================ */
-  header {
-    height: 56px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #f0f4f9;
+
+  /* team_data ==============================*/
+
+  .team-member a {
+    font-size: 20px;
   }
 
-  header a {
-    text-decoration: none;
-    font-size: 34px;
-    font-weight: 600;
-    color: #6c7686;
-    margin: 0;
+  .team-table-head {
+    display: flex;
+    background-color: #b7cadc;
+    border-radius: 2px 2px 0 0;
+    height: 44px;
+    font-size: 16px;
+    line-height: 46px;
+    color: #ffffff;
   }
   
-  /* container ================================ */
-  .container {
-    width: 80%;
-    min-width: 360px;
-    max-width: 720px;
-    margin: 0 auto;
-    margin-top: 56px;
+  .team-table-body {
+    background-color: #ffffff;
+    height: 72px;
+    border: 1px solid #f0f4f9;
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  
+    
   /* player_data ============================== */
 
   .player-data-container {
     padding: 10px 0;
+  }
+
+  .player-data-container a {
+    font-size: 20px;
   }
 
   .player-table-head {
@@ -191,3 +202,29 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  /* header ================================ */
+  header {
+    height: 56px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f4f9;
+  }
+
+  header a {
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: 600;
+    color: #6c7686;
+    margin: 0;
+  }
+  
+  /* container ================================ */
+  .container {
+    width: 80%;
+    min-width: 360px;
+    max-width: 720px;
+    margin: 0 auto;
+    margin-top: 56px;
+  }
+  
+  

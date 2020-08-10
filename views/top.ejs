@@ -15,10 +15,10 @@
         <h2>チームから探す</h2>
         <a href="/team_list" class="index-button">チーム一覧を見る</a>
         <div class="team-form-wrapper">
-          <p class="form-label">チーム名を入力</p>
-          <form action="/team-search" method="get">
+          <p class="form-label">チーム名を入力（部分一致）</p>
+          <form action="/team_search" method="post">
             <input type="text" name="teamName">
-            <input type="submit" value="検索する">
+            <input type="submit" value="検索">
           </form>
         </div>
       </div>
@@ -27,9 +27,19 @@
         <a href="/player_list" class="index-button">選手一覧を見る</a>
         <div class="player-form-wrapper">
           <p class="form-label">選手名を入力</p>
-          <form action="/player-search" method="get">
-            <input type="text" name="playerName">
-            <input type="submit" value="検索する">
+          <form action="/player_search_last" method="post">
+            <p>
+              苗字から検索
+              <input type="text" name="playerLastName">
+              <input type="submit" value="検索">
+            </p>
+          </form>
+          <form action="/player_search_first" method="post">
+            <p>
+              名前から検索
+              <input type="text" name="playerFirstName">
+              <input type="submit" value="検索">
+            </p>
           </form>
         </div>
       </div>

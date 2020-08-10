@@ -20,13 +20,6 @@ connection.connect((err) => {
 });
 
 app.get('/', (req, res) => {
-  // connection.query(
-  //   'SELECT * FROM teams',
-  //   (error, results) => {
-  //     console.log(results);
-  //     res.render('hello.ejs');
-  //   }
-  // );
   res.render('top.ejs');
 });
 

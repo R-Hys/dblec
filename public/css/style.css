@@ -47,7 +47,7 @@
     font-size: 100%;
   }
   
-  /* top ================================ */
+  /* body ================================ */
   .wrapper {
     /* max-width: 1200px;
     min-width: 920px; */
@@ -58,9 +58,18 @@
     margin: 0 auto;
     padding: 60px;
   }  
+
+  .wrapper h2 {
+    padding-bottom: 30px;
+  }
   
   .index-button {
     cursor: pointer;
+  }
+
+  .form-label {
+    padding-top: 30px;
+    padding-bottom: 10px;
   }
   
     

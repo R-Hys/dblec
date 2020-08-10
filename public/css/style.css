@@ -22,16 +22,17 @@
     margin: 0;
   }
   
-  /* a {
+  a {
     display: block;
     text-decoration: none;
     color: #2d3133;
     font-size: 14px;
-  } */
+  } 
   
-  /* a:hover {
+  a:hover {
+    color: #58d2b2;
     transition: all 0.3s ease;
-  } */
+  }
   
   
   h1, h2, h3, h4, h5, h6, p {
@@ -47,7 +48,7 @@
     font-size: 100%;
   }
   
-  /* body ================================ */
+  /* top ================================ */
   .wrapper {
     /* max-width: 1200px;
     min-width: 920px; */
@@ -60,18 +61,33 @@
   }  
 
   .wrapper h2 {
+    font-size: 28px;
     padding-bottom: 30px;
   }
   
   .index-button {
     cursor: pointer;
+    font-size: 18px;
   }
 
   .form-label {
     padding-top: 30px;
     padding-bottom: 10px;
   }
+  /* team_list ============================= */
+
+  .container-header {
+    padding-bottom: 20px;
+  }
+
+  .name-column {
+    font-size: 24px;
+  }
   
+  .cancel-button {
+    cursor: pointer;
+    padding: 20px 0;
+  }
     
   /* header ================================ */
   header {
@@ -88,19 +104,6 @@
     margin: 0;
   }
   
-  /* .header-logo {
-    margin-left: 56px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 56px;
-    color: #6c7686;
-    display: inline;
-  } */
-  
-  /* .header-logo:hover {
-    color: #58d2b2;
-  } */
-  
   /* container ================================ */
   .container {
     width: 80%;
@@ -110,39 +113,81 @@
     margin-top: 56px;
   }
   
-  /* .container-header {
+  /* player_data ============================== */
+
+  .player-data-container {
+    padding: 10px 0;
+  }
+
+  .player-table-head {
+    display: flex;
+    background-color: #b7cadc;
+    border-radius: 2px 2px 0 0;
+    height: 44px;
+    font-size: 16px;
+    line-height: 46px;
+    color: #ffffff;
+  }
+  
+  .player-table-body {
+    background-color: #ffffff;
+    height: 72px;
+    border: 1px solid #f0f4f9;
+    border-top: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
-  } */
-  
-  /* .container-header .new-button {
-    background: #80bcff;
-    border-radius: 30px;
-    font-size: 14px;
-    width: 120px;
-    height: 45px;
-    line-height: 43px;
-    text-align: center;
-    color: #ffffff;
-    border: 2px solid #80bcff;
   }
-  .container-header .new-button:hover {
+  
+  .game-table-head {
+    display: flex;
+    background-color: #b7cadc;
+    border-radius: 2px 2px 0 0;
+    height: 44px;
+    font-size: 16px;
+    line-height: 46px;
+    color: #ffffff;
+  }
+
+  .year-column {
+    width: 144px;
+    text-align: center;
+  }
+
+  .season-column{
+    width: 144px;
+    text-align: center;
+  }
+
+  .date-column{
+    width: 144px;
+    text-align: center;
+  }
+
+  .rank-column{
+    width: 144px;
+    text-align: center;
+  }
+
+  .point-column{
+    width: 144px;
+    text-align: center;
+  }
+
+  .p-column {
+    width: 230px;
+    text-align: center;
+  }
+
+  .game-table-body {
     background-color: #ffffff;
-    color: #80bcff;
-    transition: all 0.3s ease;
-  } */
+  }
   
-  /* .cancel-button {
-    margin-top: 16px;
-    margin-left: 2px;
-    font-weight: 600;
-    color: #bac6d3;
-    text-decoration: underline;
-    display: inline-block;
-  } 
-  .cancel-button:hover {
-    color: #80bcff;
-  }*/
-  
+  .game-table-body li {
+    height: 72px;
+    border: 1px solid #f0f4f9;
+    border-top: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

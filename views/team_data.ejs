@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>M LEAGUE DB</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <a href="/">M LEAGUE DB</a>
+        </div>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1><%= players[0].team_name%></h1>
+      </div>
+      <div class="player-table-wrapper">
+        <div class="team-data">
+        <h2>所属選手</h2>
+            <ul class="team-data-detail">
+                <% players.forEach((player) => { %>
+                    <li>
+                    <p>・<%= player.last_name%> <%= player.first_name%></p>
+                    </li>
+                <% }); %>
+           </ul>
+        </div>
+      </div>
+      <a href="/team_list" class="cancel-button">もどる</a>
+    </div>
+  </body>
+</html>

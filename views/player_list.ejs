@@ -10,19 +10,23 @@
         <div class="container">
             <a href="/">M LEAGUE DB</a>
         </div>
-      </header>
+    </header>
     <div class="container">
       <div class="container-header">
-        <h1>買い物リスト作成</h1>
+        <h1>選手一覧</h1>
       </div>
-      <div class="item-form-wrapper">
-        <p class="form-label">買うもの</p>
-        <form action="/create" method="post">
-          <input type="text" name="itemName">
-          <input type="submit" value="作成する">
-        </form>
+      <div class="index-table-wrapper">
+        <ul class="table-body">
+          <% players.forEach((player) => { %>
+            <li>
+              <div class="player-list">
+                <a href="/player_list/<%= player.id%>" class="name-column">・<%= player.last_name %> <%= player.first_name %></a>
+              </div>
+            </li>
+          <% }) %>
+        </ul>
       </div>
-      <a href="/index" class="cancel-button"></span>もどる</a>
+      <a href="/" class="cancel-button">もどる</a>
     </div>
   </body>
 </html>

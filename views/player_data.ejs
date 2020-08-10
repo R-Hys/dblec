@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>M LEAGUE DB</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <a href="/">M LEAGUE DB</a>
+        </div>
+    </header>
+    <div class="container">
+      <div class="container-header">
+        <h1><%= data[0].last_name%> <%= data[0].first_name%></h1>
+      </div>
+      <div class="player-data">
+        <div class="player-data-container">
+            <h2>所属チーム</h2>
+            <h3><%= data[0].team_name%></h3>
+        </div>
+        <div class="player-data-container">
+            <h2>成績</h2>
+            <!-- <h3>'18年</h3> -->
+            <div class="player-table-head">
+                <span class="score-column p-column">合計スコア</span>
+                <span class="ave-point-column p-column">平均スコア</span>
+                <span class="ave-rank-column p-column">平均順位</span>
+                <span class="num-column p-column">出場試合数</span>
+            </div>
+            <div class="player-table-body">
+                <span class="score-column p-column"><%= ave_data.score%>pt</span>
+                <span class="ave-point-column p-column"><%= ave_data.ave_score%>pt</span>
+                <span class="ave-rank-column p-column"><%= ave_data.ave_rank%></span>
+                <span class="num-column p-column"><%= ave_data.game_num%></span>
+            </div>
+            <!-- <h3>'19年</h3> -->
+            <!-- <h3>総合</h3> -->
+        </div>
+        <!-- <div class="game-table-head"> -->
+        <div class="player-data-container">
+            <h2>出場試合一覧</h2>
+            <div class="game-table-head">
+                <span class="year-column">年度</span>
+                <span class="season-column">シーズン</span>
+                <span class="date-column">日程</span>
+                <span class="rank-column">着順</span>
+                <span class="point-column">ポイント</span>
+            </div>
+            <div class="game-table-body">
+                <ul>
+                    <% data.forEach((game) => { %>
+                        <li>
+                            <span class="year-column"><%= game.year%></span>
+                            <span class="season-column"><%= game.season%></span>
+                            <span class="date-column"><%= game.date%></span>
+                            <span class="rank-column"><%= game.rank_num%></span>
+                            <span class="point-column"><%= game.point/10%></span>
+                        </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <a href="/player_list" class="cancel-button">もどる</a>
+    </div>
+  </body>
+</html>

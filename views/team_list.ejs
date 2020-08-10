@@ -16,20 +16,17 @@
         <h1>チーム一覧</h1>
       </div>
       <div class="index-table-wrapper">
-        <!-- <div class="table-head">
-          <span>チーム名</span>
-        </div> -->
         <ul class="table-body">
           <% teams.forEach((team) => { %>
             <li>
-              <div class="team-data">
-                <span class="name-column"><%= team.name %></span>
+              <div class="team-list">
+                <a href="/team_list/<%= team.id%>" class="name-column">・<%= team.name %></a>
               </div>
             </li>
           <% }) %>
         </ul>
       </div>
-      <a href="/" class="index-button">もどる</a>
+      <a href="/" class="cancel-button">もどる</a>
     </div>
   </body>
 </html>
